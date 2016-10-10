@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+SELECT
+	${5:${4/(.).*/$1/}}.${1:*},
+	${8:${4/(.).*/$1/}}.${2:*}
+FROM ${3:schema}.${4:table_1} ${5:${4/(.).*/$1/}}
+JOIN ${6:schema}.${7:table_2} ${8:${7/(.).*/$1/}} ON (
+	${5:${4/(.).*/$1/}}.${9:column} = ${8:${7/(.).*/$1/}}.${9:column}
+)
+;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>v-select-with-join</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+	<!-- Optional: Description to show in the menu -->
+</snippet>
