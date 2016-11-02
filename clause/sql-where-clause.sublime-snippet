@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+WHERE
+	${1:a}.${2:column} ${3:=} ${4:'value'}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>v-where-clause</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+	<!-- Optional: Description to show in the menu -->
+</snippet>
